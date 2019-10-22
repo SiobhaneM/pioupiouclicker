@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pioi Piou Clicker</title>
+	<title>Piou Piou Clicker</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cliker.css">
 
-	<style type="text/css">
 
-	</style>
 </head>
 
 
 <body>
 
-    <div class="shop">
-   
-          <div class="ligne1">
-          	 <img class="photo1" src="./items/arcenciel.png">
-          	 <img class="photo1"src="./items/badgeduggie.png">
-          	 <img class="photo1"src="./items/baguette.png">
-          	 <img class="photo1"src="./items/ball.png">
-          </div>
-          <div class="ligne2">
-          	<img class="photo2"src="./items/bat.png">
-          	<img class="photo2"src="./items/charbon.png">
-          	<img class="photo2"src="./items/sabrelaser.png">
-          	<img class="photo2"src="./items/tardis.png">
-          </div>
-          <div class="ligne3">
-          	<img class="photo3"src="./items/vaisseau.png">
-          	<img class="photo3"src="">
-          	<img class="photo3"src="">
-          	<img class="photo3"src="">
-          </div>
-          <div class="ligne4">
-          	<img class="photo4"src="">
-          	<img class="photo4"src="">
-          	<img class="photo4"src="">
-          	<img class="photo4"src="">
-          </div>
+<!--test bouton-->
+<!-- FIN test bouton-->
+
+    <!--<button id="multi" onclick="incrementer()">Bonus</button>-->
+<div id="principale">
+
+	<div id="CotePerso">
+     
+     <div id="barrexp">
+    	<button id="auto" class="auto" onclick="autoclicker()">Auto Clicker = 200</button>
+	
+    	<div id="affichage"></div>
+	
+    	<div id="affichagemulti" ></div>
+    </div>
+	
+
+	<div id="perso">
+		
+    	<div id="hero"></div>
+
+		<button id="bouton"></button>
 
 	</div>
+	</div>
 
-    <div class="persos">
+<div class="container">
 
-    	<div class="perso1"></div>
-    	<div class="perso2"></div>
-    	<div class="perso3"></div>
-    	<div class="perso4"></div>
-    	<div class="perso5"></div>
-    	<div class="perso6"></div>
-    	<div class="perso7"></div>
-    	<div class="perso8"></div>
-    	<div class="perso9"></div>
-    		
-    	</div>
+
+
+        <div class="shop">
+   
+          <div class="ligne1">
+          	 <button class="multi" onclick="incrementer1()"><img class="photo" src="./items/arcenciel.png"></button>
+          	 <button class="multi" onclick="incrementer2()"><img class="photo"src="./items/badgeduggie.png"></button>
+          	 <button class="multi" onclick="incrementer3()"><img class="photo"src="./items/baguette.png"></button>
+          	 
+          </div>
+          <div class="ligne2">
+          	<button class="multi" onclick="incrementer4()"><img class="photo"src="./items/ball.png"></button>
+          	<button class="multi" onclick="incrementer5()"><img class="photo"src="./items/bat.png"></button>
+          	<button class="multi" onclick="incrementer6()"><img class="photo"src="./items/charbon.png"></button>
+
+          </div>
+          <div class="ligne3">
+            <button class="multi" onclick="incrementer7()"><img class="photo"src="./items/sabrelaser.png"></button>
+          	<button class="multi" onclick="incrementer8()"><img class="photo"src="./items/tardis.png"></button>
+          	<button class="multi" onclick="incrementer9()"><img class="photo"src="./items/google.png"></button>
+          
+          </div>
+          
+          </div>
+
+	
+
     	
+    <!-- HTML JULIEN / Tableau des Héros ###############################################################################-->
 
-
+    <div class="grid-container2">
+       <div class="grid-item"> <button onclick="badbad1()">Bat Piou-Piou</button></div>
+        <div class="grid-item"><button onclick="badbad2()">hey Duggie !!</button></div>
+        <div class="grid-item"><button onclick="badbad3()">Harry Potter</button></div>
+        <div class="grid-item"><button onclick="badbad4()">Goku</button></div>
+        <div class="grid-item"><button onclick="badbad5()">Bat Piou-Piou</button></div>
+        <div class="grid-item"><button onclick="badbad6()">Chewbacca</button></div>
+        <div class="grid-item"><button onclick="badbad7()">Licorne</button></div>
+        <div class="grid-item"><button onclick="badbad8()">Dr Who</button></div>
+        <div class="grid-item"><button onclick="badbad9()">Avatars</button></div>    
     </div>
+<!-- FIN HTML JULIEN / Tableau des Héros ###########################################################################-->
+</div>
+</div>
 
-
+<script type="text/javascript" src="clicker.js" ></script>
 
 </body>
+
+
+
+
 </html>

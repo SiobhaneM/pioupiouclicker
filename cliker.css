@@ -1,0 +1,158 @@
+body{
+    background-image:url("space_gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0px;
+    padding:0px;
+    }
+
+#principale{
+
+  display: flex;
+  border: solid orange;
+  width: 1900px;
+  height: 1080px;
+
+}
+
+#CotePerso {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+#barrexp{
+
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+ 
+
+#perso{
+
+  display: flex;
+  height: 750px;
+  width: 1400px;
+  justify-content: space-around;
+}
+
+
+
+.column {
+ float: left;
+ width: 35%;
+ padding: 120px;
+}
+
+.grid-container2 {
+
+ display: flex;
+ background-color: #2196F3;
+ width: 100%;
+ height: 60%;
+ flex-wrap: wrap;
+
+}
+
+.grid-item {
+
+  display: flex;
+
+ width: 490px;
+ flex-wrap: wrap;
+ height: 20px;
+ background-color: rgba(255, 255, 255, 0.8);
+ border: 1px solid rgba(0, 0, 0, 0.8);
+ padding: 20px;
+ font-size: 30px;
+ align-items: flex-start;
+ 
+}
+
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  width: 24%;
+
+  border: solid orange;
+  flex-wrap: wrap;
+  
+  
+}
+
+.shop{
+
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  margin-top: 0;
+  height: 35%;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.photo {
+
+  margin: auto;
+  padding: auto;
+  width: 130px;
+  height: 130px;
+}
+
+#affichage{
+
+  background-color: white;
+  width: 200px;
+  border: solid black; 
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#bouton{
+
+  position: relative;
+  height: 650px;
+  width: 360px;
+  background: url(./ennemis/jiren.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: none;
+  border: none;
+
+
+  
+}
+
+#hero{
+
+  display: flex;
+  height: 650px;
+  width: 360px;
+  position: relative;
+  background-image: url(./heros/goku.png);
+  background-size: cover;
+  background-color: none;
+  border: none;
+
+}
+
+.multi{
+
+  text-align: center;
+}
+
+.auto {
+
+  display: flex;
+  width: 200px;
+  height: 50px;
+}
+
+
+/*SIOOOOOOOOOOOOOOOOOOOOOOO*/
