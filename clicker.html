@@ -11,18 +11,24 @@
 
 <body>
 
-<!---->
+<!--test bouton-->
+<!-- FIN test bouton-->
 
+    <!--<button id="multi" onclick="incrementer()">Bonus</button>-->
+<div id="principale">
 
-    <button id="multi" onclick="incrementer()">Bonus</button>
+	<div id="CotePerso">
 
-    <button id="auto">Auto Clicker = 200</button>
+    	<button id="auto" class="auto" onclick="autoclicker()">Auto Clicker = 200</button>
+	
+    	<div id="affichage"></div>
+	
+    	<div id="affichagemulti" ></div>
+	
+    	<img class="goku" src="./heros/goku.png">
 
-    <div><div id="affichage"></div></div>
-
-    <div id="affichagemulti" ></div>
-
-<button id="bouton"><img src="./ennemis/frieza.png"></button>
+		<button id="bouton"></button>
+	</div>
 
 <div class="container">
 
@@ -31,45 +37,40 @@
         <div class="shop">
    
           <div class="ligne1">
-          	 <img class="photo" src="./items/arcenciel.png">
-          	 <img class="photo"src="./items/badgeduggie.png">
-          	 <img class="photo"src="./items/baguette.png">
+          	 <button class="multi" onclick="incrementer1()"><img class="photo" src="./items/arcenciel.png"></button>
+          	 <button class="multi" onclick="incrementer2()"><img class="photo"src="./items/badgeduggie.png"></button>
+          	 <button class="multi" onclick="incrementer3()"><img class="photo"src="./items/baguette.png"></button>
           	 
           </div>
           <div class="ligne2">
-          	<img class="photo"src="./items/ball.png">
-          	<img class="photo"src="./items/bat.png">
-          	<img class="photo"src="./items/charbon.png">
+          	<button class="multi" onclick="incrementer4()"><img class="photo"src="./items/ball.png"></button>
+          	<button class="multi" onclick="incrementer5()"><img class="photo"src="./items/bat.png"></button>
+          	<button class="multi" onclick="incrementer6()"><img class="photo"src="./items/charbon.png"></button>
 
           </div>
           <div class="ligne3">
-            <img class="photo"src="./items/sabrelaser.png">
-          	<img class="photo"src="./items/tardis.png">
-          	<img class="photo"src="./items/google.png">
-          	<img class="photo1"src="">
-          	<img class="photo1"src="">
-          	<img class="photo1"src="">
+            <button class="multi" onclick="incrementer7()"><img class="photo"src="./items/sabrelaser.png"></button>
+          	<button class="multi" onclick="incrementer8()"><img class="photo"src="./items/tardis.png"></button>
+          	<button class="multi" onclick="incrementer9()"><img class="photo"src="./items/google.png"></button>
+          
           </div>
-          <div class="ligne4">
-          	<img class="photo4"src="">
-          	<img class="photo4"src="">
-          	<img class="photo4"src="">
-          	<img class="photo4"src="">
+          
           </div>
 
 	
 
     	
     <!-- HTML JULIEN / Tableau des Héros ###############################################################################-->
+
     <div class="grid-container2">
-        <div class="grid-item"><img src="#">Bat Piou-Piou</div>
-        <div class="grid-item"><img src="#">Hey Duggie!!</div>
-        <div class="grid-item"><img src="#">Haku</div>
-        <div class="grid-item"><img src="#">Goku</div>
-        <div class="grid-item"><img src="#">Chewbacca</div>
-        <div class="grid-item"><img src="#">Licorne</div>
-        <div class="grid-item"><img src="#">Dr Who</div>
-        <div class="grid-item"><img src="#">Avatars</div>    
+       <div class="grid-item"> <button onclick="badbad()">Bat Piou-Piou</button></div>
+        <div class="grid-item">Hey Duggie!!</div>
+        <div class="grid-item">Haku</div>
+        <div class="grid-item">Goku</div>
+        <div class="grid-item">Chewbacca</div>
+        <div class="grid-item">Licorne</div>
+        <div class="grid-item">Dr Who</div>
+        <div class="grid-item">Avatars</div>    
     </div>
 <!-- FIN HTML JULIEN / Tableau des Héros ###########################################################################-->
 </div>

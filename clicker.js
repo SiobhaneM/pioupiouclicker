@@ -70,9 +70,13 @@ function autoClicker(){
 
 $auto.onclick = autoClicker;*/
 
+
+
+
 var score = 0;
 var compteur = 1;
 var prix = 50;
+var mechant = document.getElementById("bouton");
 
 
 
@@ -84,10 +88,12 @@ function ajouter(){
 
 }
 
-bouton.onclick = ajouter;
+mechant.onclick = ajouter;
+console.log(score);
 
+/*BONUS*/
 
-function incrementer(){
+function incrementer1(){
 
     if (score >= prix) {
     document.getElementById("affichage").innerHTML = score - prix;
@@ -97,8 +103,112 @@ function incrementer(){
     
     }
      
-     document.getElementById("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
 }   
+
+
+
+function incrementer2(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+
+function incrementer3(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+function incrementer4(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+function incrementer5(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+     function incrementer6(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+     function incrementer7(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+
+     function incrementer8(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+
+}
+     function incrementer9(){
+
+    if (score >= prix) {
+    document.getElementById("affichage").innerHTML = score - prix;
+    score = score - prix;
+    compteur = compteur + 1;
+    prix = prix * 2;
+    
+    }
+     
+     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+}
+/*BONUS*/
+
 
 function autoclicker(){
 
@@ -110,4 +220,8 @@ function autoclicker(){
     }
 } 
    
-auto.onclick = autoclicker;
+function badbad(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
