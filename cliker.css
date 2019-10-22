@@ -1,0 +1,92 @@
+body{
+    background-image:url("space_gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0px;
+    padding:0px;
+    }
+
+.column {
+ float: left;
+ width: 35%;
+ padding: 120px;
+}
+/* RAJOUT CSS JULIEN / TABLEAU DES HEROS ########################################################## */
+.grid-container2 {
+ display: grid;
+ float: right;
+ grid-column-gap: 50px;
+ grid-row-gap: 10px;
+ grid-template-rows: 80px 80px;
+ background-color: #2196F3;
+ padding: 10px;
+ width: 400px;
+}
+.grid-item {
+ background-color: rgba(255, 255, 255, 0.8);
+ border: 1px solid rgba(0, 0, 0, 0.8);
+ padding: 20px;
+ font-size: 30px;
+ text-align: center;
+}
+.item1 {
+ grid-column-start: 1;
+ grid-column-end: 3;
+ grid-row-start: 1;
+ grid-row-end: 3;
+}
+/* FIN RAJOUT CSS JULIEN / END TABLEAU DES HEROS ######################################################## */
+
+
+/*SIOOOOOOOOOOOOOOOOOOOOOOO*/
+.container {
+
+  display: flex;
+  justify-content: flex-end;
+  
+  
+}
+
+.shop{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+
+	
+  
+}
+
+.photo {
+
+  background-color: lightgrey;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding: auto;
+  width: 130px;
+  height: 130px;
+}
+
+#affichage{
+
+  background-color: white;
+  width: 200px;
+  border: solid black; 
+}
+
+#bouton{
+
+  position: relative;
+  top: 300px;
+  left: 1000px;
+  z-index: 3;
+  background: none;
+  border:none;
+  
+
+}
+
+#bouton img{
+  width: 400px;
+}
+
+/*SIOOOOOOOOOOOOOOOOOOOOOOO*/
