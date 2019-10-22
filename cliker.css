@@ -16,8 +16,27 @@ body{
 }
 
 #CotePerso {
+
+  display: flex;
+  flex-wrap: wrap;
   width: 75%;
 }
+#barrexp{
+
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+ 
+
+#perso{
+
+  display: flex;
+  height: 750px;
+  width: 1400px;
+  justify-content: space-around;
+}
+
 
 
 .column {
@@ -97,25 +116,30 @@ body{
 
 #bouton{
 
-  position: fixed;
-  top: 250px;
-  left: 900px;
-  height: 450px;
+  position: relative;
+  height: 650px;
   width: 360px;
   background: url(./ennemis/jiren.png) ;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-color: none;
   border: none;
+
 
   
 }
 
-.goku{
+#hero{
 
-  width: 350px;
-  position: fixed;
-  top : 130px;
-  left: 100px;
+  display: flex;
+  height: 650px;
+  width: 360px;
+  position: relative;
+  background-image: url(./heros/goku.png);
+  background-size: cover;
+  background-color: none;
+  border: none;
+
 }
 
 .multi{
@@ -129,5 +153,6 @@ body{
   width: 200px;
   height: 50px;
 }
+
 
 /*SIOOOOOOOOOOOOOOOOOOOOOOO*/

@@ -75,7 +75,15 @@ $auto.onclick = autoClicker;*/
 
 var score = 0;
 var compteur = 1;
-var prix = 50;
+var prix1 = 10;
+var prix2 = 20;
+var prix3 = 30;
+var prix4 = 40;
+var prix5 = 50;
+var prix6 = 60;
+var prix7 = 70;
+var prix8 = 80;
+var prix9 = 90;
 var mechant = document.getElementById("bouton");
 
 
@@ -84,129 +92,131 @@ function ajouter(){
 
     
     score = score + compteur;
-    document.getElementById("affichage").innerHTML ="Experience = "+ score;
+    document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur;
 
 }
 
 mechant.onclick = ajouter;
 console.log(score);
 
-/*BONUS*/
+/* liste des fonctions pour chaque bonus (9)*/
 
 function incrementer1(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix1) {
+    document.getElementById("affichage").innerHTML = score - prix1;
+    score = score - prix1;
     compteur = compteur + 1;
-    prix = prix * 2;
-    
+    prix1 = prix1 * 2;
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML = "Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix1;
 }   
 
 
 
 function incrementer2(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix2) {
+    document.getElementById("affichage").innerHTML = score - prix2;
+    score = score - prix2;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix2 = prix2 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix2;
 }
 
 function incrementer3(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix3) {
+    document.getElementById("affichage").innerHTML = score - prix3;
+    score = score - prix3;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix3 = prix3 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix3;
 }
 function incrementer4(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix4) {
+    document.getElementById("affichage").innerHTML = score - prix4;
+    score = score - prix4;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix4 = prix4 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix4;
 }
 function incrementer5(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix5) {
+    document.getElementById("affichage").innerHTML = score - prix5;
+    score = score - prix5;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix5 = prix5 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix5;
 }
      function incrementer6(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix6) {
+    document.getElementById("affichage").innerHTML = score - prix6;
+    score = score - prix6;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix6 = prix6 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix6;
 }
      function incrementer7(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix7) {
+    document.getElementById("affichage").innerHTML = score - prix7;
+    score = score - prix7;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix7 = prix7 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix7;
 }
 
      function incrementer8(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix8) {
+    document.getElementById("affichage").innerHTML = score - prix8;
+    score = score - prix8;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix8 = prix8 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix8;
 
 }
      function incrementer9(){
 
-    if (score >= prix) {
-    document.getElementById("affichage").innerHTML = score - prix;
-    score = score - prix;
+    if (score >= prix9) {
+    document.getElementById("affichage").innerHTML = score - prix9;
+    score = score - prix9;
     compteur = compteur + 1;
-    prix = prix * 2;
+    prix9 = prix9 * 2;
     
     }
      
-     document.getElementByClassName("multi").innerHTML = "Par " + compteur + " Prix = " + prix;
+     document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix9;
 }
+
+/* FIN liste des fonctions pour chaque bonus (9)*/
+
 /*BONUS*/
 
 
@@ -220,7 +230,56 @@ function autoclicker(){
     }
 } 
    
-function badbad(){
+function badbad1(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    
+}
+
+function badbad2(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad3(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad4(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad5(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad6(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad7(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad8(){
+
+    mechant.style.backgroundImage="none";
+    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+}
+
+function badbad9(){
 
     mechant.style.backgroundImage="none";
     mechant.style.backgroundImage="url(./ennemis/frieza.png)";
