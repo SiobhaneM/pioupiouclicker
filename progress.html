@@ -1,0 +1,72 @@
+<!--<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="progress.css">
+
+</head>
+
+
+<body>
+
+
+Lets start with a single html5 progress element. Currently our progress bar is in the indeterminate state. Lets change the status by adding 'max' and 'value' attribute to our progress element.
+
+We are almost done styling a single progress bar, except adding fallback technique for browsers that do not support progress element. The idea is to simulate the visual styles of the progress bar using `div` and `span`.
+
+Note:- To imitate the older browsers and help us style the fallback technique, we wil temporarily comment-out the progress tag.
+
+
+
+        
+         HTML5 
+    <div id="nb" style="width:80%" data-value="80"></div>
+
+
+        <progress max="100" value="10" class="html5">
+             Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. 
+            </progress>
+
+            
+
+            	<button class="click" onclick="ajouter()">click</button>
+                
+            
+        
+        
+   
+    
+<script type="text/javascript" src="progress.js"></script>
+</body>
+
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="progress.css">
+
+</head>
+
+<body>
+
+
+<div id="score"></div>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+
+<button onclick="ajouter()">Click Me</button> 
+
+
+<script type="text/javascript" src="progress.js"></script>
+</body>
+</html>
