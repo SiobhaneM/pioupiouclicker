@@ -117,9 +117,12 @@ function incrementer1(){
     score = score - prix1;
     compteur = compteur + 1;
     prix1 = prix1 * 2;
+    alert ("Premier Bonus Disponible");
+    gif1.style.backgroundImage=url()
     }
      
      document.getElementById("affichage").innerHTML = "Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix1;
+
 }   
 
 
@@ -131,6 +134,7 @@ function incrementer2(){
     score = score - prix2;
     compteur = compteur + 100;
     prix2 = prix2 * 2;
+    gif2.style.backgroundImage=url()
     
     }
 
@@ -145,11 +149,13 @@ function incrementer3(){
     score = score - prix3;
     compteur = compteur + 1;
     prix3 = prix3 * 2;
+    gif3.style.backgroundImage="url(balai.gif)";
     
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix3;
 }
+
 function incrementer4(){
 
     if (score >= prix4) {
@@ -172,6 +178,8 @@ function incrementer5(){
     score = score - prix5;
     compteur = compteur + 1;
     prix5 = prix5 * 2;
+    gif5.style.backgroundImage=url()
+   
     
     }
      
@@ -184,6 +192,7 @@ function incrementer5(){
     score = score - prix6;
     compteur = compteur + 1;
     prix6 = prix6 * 2;
+    gif6.style.backgroundImage=url()
     
     }
      
@@ -196,7 +205,7 @@ function incrementer5(){
     score = score - prix7;
     compteur = compteur + 1;
     prix7 = prix7 * 2;
-    
+    gif7.style.backgroundImage=url()
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix7;
@@ -209,7 +218,7 @@ function incrementer5(){
     score = score - prix8;
     compteur = compteur + 1;
     prix8 = prix8 * 2;
-    
+    gif8.style.backgroundImage=url()
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix8;
@@ -222,6 +231,7 @@ function incrementer5(){
     score = score - prix9;
     compteur = compteur + 1;
     prix9 = prix9 * 2;
+    gif9.style.backgroundImage=url()
     
     }
      
