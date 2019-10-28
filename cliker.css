@@ -11,7 +11,8 @@ body{
   display: flex;
   width: 1900px;
   height: 1080px;
-
+  margin:0px;
+  padding:0px;
 }
 
 #CotePerso {
@@ -58,8 +59,7 @@ body{
 
 .grid-item {
 
-  display: flex;
-
+ display: flex;
  width: 490px;
  flex-wrap: wrap;
  height: 20px;
@@ -79,7 +79,7 @@ body{
   height: 1000px;
   width: 24%;
   flex-wrap: wrap;
-  margin-top: 50px;
+  
   
   
 }
@@ -88,8 +88,9 @@ body{
 
   display: flex;
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 4px;
   height: 35%;
   flex-direction: column;
   justify-content: center;
@@ -101,20 +102,22 @@ body{
 
   margin: auto;
   padding: auto;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
+
+
 #affichage{
-  margin-top: 50px;
-  background-color: #E85A15;
-  width: 400px;
-  border: solid black; 
-  height: 50px;
-  border-radius: 18px;
-  font-family: 'Orbitron', sans-serif;
-  padding-top: 25px;
-  text-align: center;
+ margin-top: 50px;
+ background-color: #333333;
+ width: 400px;
+ border: solid black;
+ height: 50px;
+ border-radius: 18px;
+ font-family: 'Orbitron', sans-serif;
+ padding-top: 25px;
+ text-align: center;
 
 }
 
@@ -122,9 +125,9 @@ body{
 #bouton{
 
   position: relative;
-  height: 650px;
-  width: 360px;
-  background: url(./ennemis/jiren.png);
+  height: 670px;
+  width: 370px;
+  background: url(./ennemis/jokerpioupiou.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: none;
@@ -140,9 +143,9 @@ body{
 #bouton:active{
 
   position: relative;
-  height: 750px;
-  width: 460px;
-  background: url(./ennemis/jiren.png);
+  height: 650px;
+  width: 360px;
+  background: url(./ennemis/jokerpioupiou.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: none;
@@ -168,24 +171,10 @@ body{
   text-align: center;
 }
 
-.auto {
-  justify-content: center;
-  display: flex;
-  width: 200px;
-  height: 200px;
-  background: url("./items/circle.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: white;
-  font-size: 20px;
-  border: none;
-  padding-bottom: 24px;
-  font-family: 'Orbitron', sans-serif;
 
-}
 
 #gif {
-
+    display: none;
     background-repeat: no-repeat;
     width: 1300px;
     height: 800px;
@@ -196,5 +185,38 @@ body{
     z-index: 3;
 
 }
+
+
+.auto {
+ justify-content: center;
+ display: flex;
+ width: 200px;
+ height: 200px;
+ background: url("circle.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ color: white;
+ font-size: 20px;
+ border: none;
+ padding-bottom: 24px;
+ font-family: 'Orbitron', sans-serif;
+}
+
+
+.auto:active {
+ justify-content: center;
+ display: flex;
+ width: 190px;
+ height: 190px;
+ background: url("circle.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ color: white;
+ font-size: 20px;
+ border: none;
+ padding-bottom: 24px;
+ font-family: 'Orbitron', sans-serif;
+}
+
 
 /*SIOOOOOOOOOOOOOOOOOOOOOOO*/
