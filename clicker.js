@@ -117,7 +117,6 @@ function incrementer1(){
     score = score - prix1;
     compteur = compteur + 1;
     prix1 = prix1 * 2;
-    alert ("Premier Bonus Disponible");
     gif1.style.backgroundImage=url()
     }
      
@@ -178,7 +177,7 @@ function incrementer5(){
     score = score - prix5;
     compteur = compteur + 1;
     prix5 = prix5 * 2;
-    gif5.style.backgroundImage=url()
+    gif5.style.backgroundImage=url("bat.gif");
    
     
     }
