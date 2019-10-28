@@ -10,28 +10,28 @@ function ajouter(){
 
 }*/
 
+var xp = 0;
 var score = 0;
-var width = 0;
-var click = 10;
+var compteur = 10;
 var widthmin = 0;
 var widthmax = 100;
 var elem = document.getElementById("myBar");
 
 
-function ajouter(){
+function ajouterbarre(){
 
     
      
-     width = width + click;
+     score = score + compteur;
      
-     elem.style.width = width + "%";
+     elem.style.width = score + "%";
      
      
-      if (width >= widthmax){
+      if (score >= widthmax){
 
       	 elem.style.width = widthmin + "%";
-      	 width = 0;
-         click = click - (100/80);
+      	 score = 0;
+         compteur = compteur - (100/80);
 
       	 } 
 

@@ -74,7 +74,7 @@ $auto.onclick = autoClicker;*/
 
 
 var score = 0;
-var compteur = 1;
+//var compteur = 1;
 prixauto = 200;
 var prix1 = 10;
 var prix2 = 20;
@@ -88,15 +88,37 @@ var prix9 = 90;
 var mechant = document.getElementById("bouton");
 var gentil= document.getElementById("hero");
 
-var gif1 = document.getElementById("gif");
-var gif2 = document.getElementById("gif");
-var gif3 = document.getElementById("gif");
-var gif4 = document.getElementById("gif");
-var gif5 = document.getElementById("gif");
-var gif6 = document.getElementById("gif");
-var gif7 = document.getElementById("gif");
-var gif8 = document.getElementById("gif");
-var gif9 = document.getElementById("gif");
+var gif = document.getElementById("gif");
+
+var xp = 0;
+var score2 = 0;
+var compteur = 5;
+var widthmin = 0;
+var widthmax = 100;
+var elem = document.getElementById("myBar");
+
+
+function ajouterbarre(){
+
+    
+     
+     score2 = score2 + compteur;
+     
+     elem.style.width = score2 + "%";
+     
+     
+      if (score2 >= widthmax){
+
+         elem.style.width = widthmin + "%";
+         score2 = 0;
+         compteur = compteur - (100/80);
+
+         } 
+
+              
+    }
+
+
 
 function ajouter(){
 
@@ -106,8 +128,8 @@ function ajouter(){
 
 }
 
-mechant.onclick = ajouter;
-console.log(score);
+
+
 
 
 function autoclicker(){
@@ -122,8 +144,7 @@ function autoclicker(){
           
     }
 }
-
-
+ 
 
 /* liste des fonctions pour chaque bonus (9)*/
 
@@ -178,10 +199,13 @@ function incrementer4(){
     document.getElementById("affichage").innerHTML = score - prix4;
     score = score - prix4;
     compteur = compteur + 1;
-    gif4.style.display="block";
+    gif.style.display="block";
+    gif.style.height="800px";
+    gif.style.width="1300px";
     prix4 = prix4 * 2;
-    gif4.style.backgroundImage="url(tir.gif)";
-    setTimeout(function(){gif4.style.display="none";}, 2000);
+    gif.style.backgroundImage="url(tir.gif)";
+    setTimeout(function(){gif.style.display="none";}, 2000);
+    setTimeout(function(){mechant.style.backgroundImage="none";}, 2000);
     
     }
      
@@ -195,9 +219,24 @@ function incrementer5(){
     document.getElementById("affichage").innerHTML = score - prix5;
     score = score - prix5;
     compteur = compteur + 1;
+    gif.style.display="block";
+    gif.style.height="400px";
+    gif.style.width="700px";
     prix5 = prix5 * 2;
+<<<<<<< HEAD
+    setTimeout(function(){gif.style.backgroundImage="url(bat.gif)";}, 100);
+    setTimeout(function(){gif.style.backgroundImage="none";}, 200);
+    setTimeout(function(){gif.style.backgroundImage="url(bat.gif)";}, 300);
+    setTimeout(function(){gif.style.backgroundImage="none";}, 500);
+    setTimeout(function(){gif.style.backgroundImage="url(bat.gif)";}, 1000);
+    setTimeout(function(){gif.style.backgroundImage="none";}, 1300);
+    setTimeout(function(){gif.style.backgroundImage="url(bat.gif)";}, 1500);
+    
+    setTimeout(function(){gif.style.display="none";}, 5000);
+=======
     gif5.style.backgroundImage=url("bat.gif");
    
+>>>>>>> fec195e61db576277eaa3bdc9ef1ed6170c7eb5c
     
     }
      
@@ -338,7 +377,7 @@ function badbad8(){
 function badbad9(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/error.png)";
     gentil.style.backgroundImage="none";
     gentil.style.backgroundImage="url(./heros/avatars.png)";
     gentil.style.width="550px";
