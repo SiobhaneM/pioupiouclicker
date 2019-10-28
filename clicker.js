@@ -75,6 +75,7 @@ $auto.onclick = autoClicker;*/
 
 var score = 0;
 var compteur = 1;
+prixauto = 200;
 var prix1 = 10;
 var prix2 = 20;
 var prix3 = 30;
@@ -85,8 +86,17 @@ var prix7 = 70;
 var prix8 = 80;
 var prix9 = 90;
 var mechant = document.getElementById("bouton");
+var gentil= document.getElementById("hero");
 
-
+var gif1 = document.getElementById("gif");
+var gif2 = document.getElementById("gif");
+var gif3 = document.getElementById("gif");
+var gif4 = document.getElementById("gif");
+var gif5 = document.getElementById("gif");
+var gif6 = document.getElementById("gif");
+var gif7 = document.getElementById("gif");
+var gif8 = document.getElementById("gif");
+var gif9 = document.getElementById("gif");
 
 function ajouter(){
 
@@ -99,6 +109,22 @@ function ajouter(){
 mechant.onclick = ajouter;
 console.log(score);
 
+
+function autoclicker(){
+
+        
+        if (score > prixauto){
+            score = score - prixauto;
+            prixauto = prixauto * 2;
+            document.getElementById("auto").innerHTML ="Auto Clicker = " + prixauto + "xp";
+            autoclicker = window.setInterval(ajouter,1000);
+
+          
+    }
+}
+
+
+
 /* liste des fonctions pour chaque bonus (9)*/
 
 function incrementer1(){
@@ -108,9 +134,11 @@ function incrementer1(){
     score = score - prix1;
     compteur = compteur + 1;
     prix1 = prix1 * 2;
+    gif1.style.backgroundImage=url()
     }
      
      document.getElementById("affichage").innerHTML = "Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix1;
+
 }   
 
 
@@ -120,10 +148,12 @@ function incrementer2(){
     if (score >= prix2) {
     document.getElementById("affichage").innerHTML = score - prix2;
     score = score - prix2;
-    compteur = compteur + 1;
+    compteur = compteur + 100;
     prix2 = prix2 * 2;
+    gif2.style.backgroundImage=url()
     
     }
+
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix2;
 }
@@ -135,23 +165,30 @@ function incrementer3(){
     score = score - prix3;
     compteur = compteur + 1;
     prix3 = prix3 * 2;
+    gif3.style.backgroundImage="url(balai.gif)";
     
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix3;
 }
+
 function incrementer4(){
 
     if (score >= prix4) {
     document.getElementById("affichage").innerHTML = score - prix4;
     score = score - prix4;
     compteur = compteur + 1;
+    gif4.style.display="block";
     prix4 = prix4 * 2;
+    gif4.style.backgroundImage="url(tir.gif)";
+    setTimeout(function(){gif4.style.display="none";}, 2000);
     
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix4;
 }
+
+
 function incrementer5(){
 
     if (score >= prix5) {
@@ -159,6 +196,8 @@ function incrementer5(){
     score = score - prix5;
     compteur = compteur + 1;
     prix5 = prix5 * 2;
+    gif5.style.backgroundImage=url("bat.gif");
+   
     
     }
      
@@ -171,6 +210,7 @@ function incrementer5(){
     score = score - prix6;
     compteur = compteur + 1;
     prix6 = prix6 * 2;
+    gif6.style.backgroundImage=url()
     
     }
      
@@ -183,7 +223,7 @@ function incrementer5(){
     score = score - prix7;
     compteur = compteur + 1;
     prix7 = prix7 * 2;
-    
+    gif7.style.backgroundImage=url()
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix7;
@@ -196,7 +236,7 @@ function incrementer5(){
     score = score - prix8;
     compteur = compteur + 1;
     prix8 = prix8 * 2;
-    
+    gif8.style.backgroundImage=url()
     }
      
      document.getElementById("affichage").innerHTML ="Experience = "+ score + " Nb de Clics x " + compteur + " Prix = " + prix8;
@@ -209,6 +249,7 @@ function incrementer5(){
     score = score - prix9;
     compteur = compteur + 1;
     prix9 = prix9 * 2;
+    gif9.style.backgroundImage=url()
     
     }
      
@@ -220,67 +261,85 @@ function incrementer5(){
 /*BONUS*/
 
 
-function autoclicker(){
-
-        
-        if (score > 200){
-            score = score - 200;
-            autoclicker = window.setInterval(ajouter,1000);
-          
-    }
-} 
+ 
    
 function badbad1(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
-    
+    mechant.style.backgroundImage="url(./ennemis/jokerpioupiou.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/batpioupiou.png)";
+
 }
 
 function badbad2(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/mechantduggie.png)";
+    mechant.style.marginTop="-90px";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/duggie.png)";
 }
 
 function badbad3(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/detraqueur.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/harry.png)";
 }
 
 function badbad4(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/jiren.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/goku.png)";
+    gentil.style.marginTop="-40px";
+
 }
 
 function badbad5(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/sansvisage.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/haku.png)";
+    gentil.style.width="650px";
 }
 
 function badbad6(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/stormtrooper.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/Chewbacca.png)";
 }
 
 function badbad7(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/trump.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/licorne.png)";
+    gentil.style.width="350px";
+    
 }
 
 function badbad8(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/dalek.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/drwho.png)";
+    gentil.style.width="350px";
 }
 
 function badbad9(){
 
     mechant.style.backgroundImage="none";
     mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/avatars.png)";
+    gentil.style.width="550px";
 }
