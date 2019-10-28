@@ -75,6 +75,7 @@ $auto.onclick = autoClicker;*/
 
 var score = 0;
 var compteur = 1;
+prixauto = 200;
 var prix1 = 10;
 var prix2 = 20;
 var prix3 = 30;
@@ -107,6 +108,22 @@ function ajouter(){
 
 mechant.onclick = ajouter;
 console.log(score);
+
+
+function autoclicker(){
+
+        
+        if (score > prixauto){
+            score = score - prixauto;
+            prixauto = prixauto * 2;
+            document.getElementById("auto").innerHTML ="Auto Clicker = " + prixauto + "xp";
+            autoclicker = window.setInterval(ajouter,1000);
+
+          
+    }
+}
+
+
 
 /* liste des fonctions pour chaque bonus (9)*/
 
@@ -156,8 +173,10 @@ function incrementer4(){
     document.getElementById("affichage").innerHTML = score - prix4;
     score = score - prix4;
     compteur = compteur + 1;
+    gif4.style.display="block";
     prix4 = prix4 * 2;
     gif4.style.backgroundImage="url(tir.gif)";
+    setTimeout(function(){gif4.style.display="none";}, 2000);
     
     }
      
@@ -233,28 +252,22 @@ function incrementer5(){
 /*BONUS*/
 
 
-function autoclicker(){
-
-        
-        if (score > 200){
-            score = score - 200;
-            autoclicker = window.setInterval(ajouter,1000);
-          
-    }
-} 
+ 
    
 function badbad1(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
-
+    mechant.style.backgroundImage="url(./ennemis/jokerpioupiou.png)";
+    gentil.style.backgroundImage="none";
+    gentil.style.backgroundImage="url(./heros/batpioupiou.png)";
 
 }
 
 function badbad2(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/mechantduggie.png)";
+    mechant.style.marginTop="-90px";
     gentil.style.backgroundImage="none";
     gentil.style.backgroundImage="url(./heros/duggie.png)";
 }
@@ -262,49 +275,55 @@ function badbad2(){
 function badbad3(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/detraqueur.png)";
     gentil.style.backgroundImage="none";
-    gentil.style.backgroundImage="url(./heros/harrypotter.png)";
+    gentil.style.backgroundImage="url(./heros/harry.png)";
 }
 
 function badbad4(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/jiren.png)";
     gentil.style.backgroundImage="none";
     gentil.style.backgroundImage="url(./heros/goku.png)";
+    gentil.style.marginTop="-40px";
+
 }
 
 function badbad5(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/sansvisage.png)";
     gentil.style.backgroundImage="none";
     gentil.style.backgroundImage="url(./heros/haku.png)";
+    gentil.style.width="650px";
 }
 
 function badbad6(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/stormtrooper.png)";
     gentil.style.backgroundImage="none";
-    gentil.style.backgroundImage="url(./heros/chewbacca.png)";
+    gentil.style.backgroundImage="url(./heros/Chewbacca.png)";
 }
 
 function badbad7(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/trump.png)";
     gentil.style.backgroundImage="none";
     gentil.style.backgroundImage="url(./heros/licorne.png)";
+    gentil.style.width="350px";
+    
 }
 
 function badbad8(){
 
     mechant.style.backgroundImage="none";
-    mechant.style.backgroundImage="url(./ennemis/frieza.png)";
+    mechant.style.backgroundImage="url(./ennemis/dalek.png)";
     gentil.style.backgroundImage="none";
     gentil.style.backgroundImage="url(./heros/drwho.png)";
+    gentil.style.width="350px";
 }
 
 function badbad9(){
@@ -312,5 +331,6 @@ function badbad9(){
     mechant.style.backgroundImage="none";
     mechant.style.backgroundImage="url(./ennemis/frieza.png)";
     gentil.style.backgroundImage="none";
-    gentil.style.backgroundImage="url(./heros/avatar2.png)";
+    gentil.style.backgroundImage="url(./heros/avatars.png)";
+    gentil.style.width="550px";
 }
